@@ -18,8 +18,8 @@ export default function BatteryPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative bg-navy overflow-hidden">
-        <div className="absolute -top-40 -right-40 w-[500px] h-[500px] bg-green/10 rounded-full blur-3xl" />
+      <section className="relative hero-gradient overflow-hidden">
+        <div className="absolute -top-40 -right-40 w-[500px] h-[500px] bg-amber/10 rounded-full blur-3xl" />
         <div className="absolute bottom-0 left-0 w-full h-20 bg-gradient-to-t from-white to-transparent" />
         <div className="relative max-w-7xl mx-auto px-6 py-20 md:py-28">
           <span className="inline-flex items-center gap-2 bg-green/10 text-green text-sm font-semibold px-4 py-1.5 rounded-full mb-5">
@@ -46,7 +46,7 @@ export default function BatteryPage() {
       </section>
 
       {/* Benefits */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 warm-bg">
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-3xl font-bold text-navy text-center mb-12">Why Add a Battery?</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -92,10 +92,10 @@ export default function BatteryPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-green py-14">
+      <section className="cta-gradient py-14">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-white">Ready to Store Your Solar Energy?</h2>
-          <p className="mt-3 text-green-dark/80 font-medium">Find out which battery system is right for your home.</p>
+          <p className="mt-3 text-white/70 font-medium">Find out which battery system is right for your home.</p>
           <Link href="/contact" className="inline-flex items-center gap-2 bg-navy hover:bg-navy-light text-white font-semibold px-8 py-3.5 rounded-lg transition-all mt-6 shadow-lg hover:shadow-xl hover:-translate-y-0.5">
             Get Free Assessment <ArrowRight size={18} />
           </Link>

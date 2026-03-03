@@ -1,4 +1,6 @@
-@import "tailwindcss";
+import os
+
+css = """@import "tailwindcss";
 
 :root {
   --navy: #1a365d;
@@ -115,20 +117,12 @@ body {
   background: linear-gradient(135deg, #0f2440 0%, #1a365d 50%, #234e82 100%);
 }
 
-.section-warm,
-.warm-bg {
+.section-warm {
   background: linear-gradient(180deg, #fef3c7 0%, #fde68a 50%, #fef3c7 100%);
 }
 
 .section-warm-light {
   background: #fef3c7;
-}
-
-.warm-fade-left {
-  background: linear-gradient(to right, #fde68a, transparent);
-}
-.warm-fade-right {
-  background: linear-gradient(to left, #fde68a, transparent);
 }
 
 .cta-gradient {
@@ -153,3 +147,9 @@ body {
 .animate-marquee:hover {
   animation-play-state: paused;
 }
+"""
+
+target = os.path.join(os.path.dirname(__file__), "src", "app", "globals.css")
+with open(target, "w") as f:
+    f.write(css)
+print("globals.css written successfully")

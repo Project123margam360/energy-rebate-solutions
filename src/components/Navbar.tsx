@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import {
   Menu,
   X,
@@ -49,15 +50,15 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-200 shadow-sm">
       {/* ── Top bar ── */}
-      <div className="hidden md:block bg-navy text-white text-sm">
+      <div className="hidden md:block bg-gradient-to-r from-navy-dark via-navy to-navy-light text-white text-sm">
         <div className="max-w-7xl mx-auto px-6 py-1.5 flex items-center justify-between">
           <p className="flex items-center gap-1.5">
-            <Zap size={14} className="text-green" />
+            <Zap size={14} className="text-amber" />
             Government-backed rebates available — save up to $3,000+
           </p>
           <a
             href="tel:1300000000"
-            className="flex items-center gap-1.5 hover:text-green-light transition-colors"
+            className="flex items-center gap-1.5 hover:text-amber-light transition-colors"
           >
             <Phone size={14} />
             1300 000 000
@@ -66,20 +67,17 @@ export default function Navbar() {
       </div>
 
       {/* ── Main nav ── */}
-      <nav className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
+      <nav className="max-w-7xl mx-auto px-6 py-1 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2.5 group">
-          <div className="w-10 h-10 rounded-lg bg-navy flex items-center justify-center shadow-md group-hover:bg-navy-light transition-colors">
-            <Zap size={22} className="text-green" />
-          </div>
-          <div className="leading-tight">
-            <span className="block text-lg font-bold text-navy tracking-tight">
-              Energy Rebate
-            </span>
-            <span className="block text-xs font-medium text-gray-500 -mt-0.5 tracking-wide uppercase">
-              Solutions
-            </span>
-          </div>
+        <Link href="/" className="flex items-center group -my-2">
+          <Image
+            src="/logo.png"
+            alt="Energy Rebate Solutions"
+            width={320}
+            height={100}
+            className="h-20 w-auto object-contain"
+            priority
+          />
         </Link>
 
         {/* Desktop links */}
@@ -121,8 +119,8 @@ export default function Navbar() {
                       href={svc.href}
                       className="flex items-start gap-3 p-3 rounded-lg hover:bg-gray-50 transition-colors group"
                     >
-                      <div className="mt-0.5 w-9 h-9 rounded-md bg-green/10 flex items-center justify-center shrink-0 group-hover:bg-green/20 transition-colors">
-                        <Icon size={18} className="text-green" />
+                      <div className="mt-0.5 w-9 h-9 rounded-md bg-amber/10 flex items-center justify-center shrink-0 group-hover:bg-amber/20 transition-colors">
+                        <Icon size={18} className="text-amber" />
                       </div>
                       <div>
                         <span className="block text-sm font-semibold text-gray-800 group-hover:text-navy transition-colors">
@@ -212,7 +210,7 @@ export default function Navbar() {
                       className="flex items-center gap-3 py-2 text-gray-600 hover:text-navy transition-colors"
                       onClick={() => setMobileOpen(false)}
                     >
-                      <Icon size={16} className="text-green" />
+                      <Icon size={16} className="text-amber" />
                       <span className="text-sm font-medium">{svc.name}</span>
                     </Link>
                   );

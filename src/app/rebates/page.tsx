@@ -77,8 +77,8 @@ export default function RebatesPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative bg-navy overflow-hidden">
-        <div className="absolute -top-40 -right-40 w-[500px] h-[500px] bg-green/10 rounded-full blur-3xl" />
+      <section className="relative hero-gradient overflow-hidden">
+        <div className="absolute -top-40 -right-40 w-[500px] h-[500px] bg-amber/10 rounded-full blur-3xl" />
         <div className="absolute bottom-0 left-0 w-full h-20 bg-gradient-to-t from-gray-50 to-transparent" />
         <div className="relative max-w-7xl mx-auto px-6 py-20 md:py-28 text-center">
           <span className="inline-flex items-center gap-2 bg-green/10 text-green text-sm font-semibold px-4 py-1.5 rounded-full mb-5">
@@ -196,7 +196,7 @@ export default function RebatesPage() {
       </section>
 
       {/* Trust banner */}
-      <section className="py-14 bg-navy">
+      <section className="py-14 hero-gradient">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             {[
@@ -220,12 +220,12 @@ export default function RebatesPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-green py-14">
+      <section className="cta-gradient py-14">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-white">
             Not Sure Which Rebates You Qualify For?
           </h2>
-          <p className="mt-3 text-green-dark/80 font-medium">
+          <p className="mt-3 text-white/70 font-medium">
             Our team will assess your property and tell you exactly what
             you&apos;re entitled to — free of charge.
           </p>

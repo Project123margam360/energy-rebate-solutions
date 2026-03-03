@@ -24,8 +24,8 @@ export default function AboutPage() {
   return (
     <>
       {/* ── Hero ── */}
-      <section className="relative bg-navy overflow-hidden">
-        <div className="absolute -top-40 -right-40 w-[500px] h-[500px] bg-green/10 rounded-full blur-3xl" />
+      <section className="relative hero-gradient overflow-hidden">
+        <div className="absolute -top-40 -right-40 w-[500px] h-[500px] bg-amber/10 rounded-full blur-3xl" />
         <div className="absolute bottom-0 left-0 w-full h-20 bg-gradient-to-t from-white to-transparent" />
         <div className="relative max-w-7xl mx-auto px-6 py-20 md:py-28 text-center">
           <span className="inline-flex items-center gap-2 bg-green/10 text-green text-sm font-semibold px-4 py-1.5 rounded-full mb-5">
@@ -139,7 +139,7 @@ export default function AboutPage() {
       </section>
 
       {/* ── Our Values ── */}
-      <section className="py-20 md:py-28 bg-gray-50">
+      <section className="py-20 md:py-28 warm-bg">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center max-w-2xl mx-auto mb-14">
             <span className="text-green font-semibold text-sm uppercase tracking-wider">
@@ -197,7 +197,7 @@ export default function AboutPage() {
       </section>
 
       {/* ── Stats ── */}
-      <section className="py-16 bg-navy">
+      <section className="py-16 hero-gradient">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             {[
@@ -269,12 +269,12 @@ export default function AboutPage() {
       </section>
 
       {/* ── CTA ── */}
-      <section className="bg-green py-14">
+      <section className="cta-gradient py-14">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-white">
             Ready to Start Saving?
           </h2>
-          <p className="mt-3 text-green-dark/80 font-medium">
+          <p className="mt-3 text-white/70 font-medium">
             Find out which government rebates you qualify for — it takes 2
             minutes.
           </p>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 55" width="280" height="55">
+  <!-- Three diamond mark -->
+  <g transform="translate(15, 6)">
+    <polygon points="20,0 40,12 20,24 0,12" fill="#E60012"/>
+    <polygon points="20,26 40,38 20,50 0,38" fill="#E60012"/>
+    <polygon points="42,13 62,25 42,37 22,25" fill="#E60012"/>
+  </g>
+  <text x="170" y="38" font-family="'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="700" fill="#1A1A1A" text-anchor="middle" letter-spacing="0.5">MITSUBISHI</text>
+  <text x="170" y="50" font-family="'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="500" fill="#666" text-anchor="middle" letter-spacing="3">ELECTRIC</text>
+</svg>

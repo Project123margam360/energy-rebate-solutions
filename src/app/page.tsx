@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import {
   ArrowRight,
   Shield,
@@ -74,45 +75,60 @@ export default function Home() {
   return (
     <>
       {/* ── Hero ── */}
-      <section className="relative bg-navy overflow-hidden">
+      <section className="relative hero-gradient overflow-hidden">
         {/* Decorative gradient blobs */}
-        <div className="absolute -top-40 -right-40 w-[500px] h-[500px] bg-green/10 rounded-full blur-3xl" />
-        <div className="absolute bottom-20 -left-32 w-[400px] h-[400px] bg-green/5 rounded-full blur-3xl" />
+        <div className="absolute -top-40 -right-40 w-[500px] h-[500px] bg-amber/10 rounded-full blur-3xl" />
+        <div className="absolute bottom-20 -left-32 w-[400px] h-[400px] bg-orange/5 rounded-full blur-3xl" />
+        <div className="absolute top-1/2 right-1/4 w-[300px] h-[300px] bg-amber-light/5 rounded-full blur-3xl" />
         <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-white to-transparent" />
 
         <div className="relative max-w-7xl mx-auto px-6 py-24 md:py-32 lg:py-44">
-          <div className="max-w-3xl">
-            <span className="inline-flex items-center gap-2 bg-green/10 text-green text-sm font-semibold px-4 py-1.5 rounded-full mb-6">
-              <Sun size={16} />
-              Government Rebates Available Now
-            </span>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight tracking-tight">
-              Welcome to{" "}
-              <span className="text-green">Energy Rebate Solutions</span>
-            </h1>
-            <p className="mt-5 text-xl md:text-2xl text-gray-300 font-medium leading-snug max-w-2xl">
-              Your Trusted Partner in Government Energy Rebates &amp; Sustainable
-              Upgrades
-            </p>
-            <p className="mt-4 text-base text-gray-400 leading-relaxed max-w-xl">
-              We help Australian households access government-backed incentives
-              for heat pumps, solar, air conditioning, and battery storage — so
-              you save money while reducing your carbon footprint.
-            </p>
-            <div className="mt-10 flex flex-col sm:flex-row gap-4">
-              <Link
-                href="/assessment"
-                className="btn-primary text-base px-8 py-3.5"
-              >
-                Get Free Assessment
-                <ArrowRight size={18} />
-              </Link>
-              <Link
-                href="/rebates"
-                className="btn-outline border-white/30 text-white hover:bg-white hover:text-navy text-base px-8 py-3.5"
-              >
-                Explore Rebates
-              </Link>
+          <div className="flex items-center justify-between gap-12">
+            {/* Left — Text content */}
+            <div className="max-w-3xl">
+              <span className="inline-flex items-center gap-2 bg-green/10 text-green text-sm font-semibold px-4 py-1.5 rounded-full mb-6">
+                <Sun size={16} />
+                Government Rebates Available Now
+              </span>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight tracking-tight">
+                Welcome to{" "}
+                <span className="text-gradient">Energy Rebate Solutions</span>
+              </h1>
+              <p className="mt-5 text-xl md:text-2xl text-gray-300 font-medium leading-snug max-w-2xl">
+                Your Trusted Partner in Government Energy Rebates &amp; Sustainable
+                Upgrades
+              </p>
+              <p className="mt-4 text-base text-gray-400 leading-relaxed max-w-xl">
+                We help Australian households access government-backed incentives
+                for heat pumps, solar, air conditioning, and battery storage — so
+                you save money while reducing your carbon footprint.
+              </p>
+              <div className="mt-10 flex flex-col sm:flex-row gap-4">
+                <Link
+                  href="/assessment"
+                  className="btn-primary text-base px-8 py-3.5"
+                >
+                  Get Free Assessment
+                  <ArrowRight size={18} />
+                </Link>
+                <Link
+                  href="/rebates"
+                  className="btn-outline border-white/30 text-white hover:bg-white hover:text-navy text-base px-8 py-3.5"
+                >
+                  Explore Rebates
+                </Link>
+              </div>
+            </div>
+
+            {/* Right — Logo */}
+            <div className="hidden lg:flex items-center justify-center shrink-0">
+              <Image
+                src="/logo.png"
+                alt="Energy Rebate Solutions Logo"
+                width={400}
+                height={400}
+                className="w-72 h-72 xl:w-80 xl:h-80 object-contain bg-white rounded-2xl"
+              />
             </div>
           </div>
         </div>
@@ -250,7 +266,7 @@ export default function Home() {
       </section>
 
       {/* ── Services ── */}
-      <section className="py-20 md:py-28 bg-gray-50">
+      <section className="py-20 md:py-28 warm-bg">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center max-w-2xl mx-auto mb-14">
             <span className="text-green font-semibold text-sm uppercase tracking-wider">
@@ -383,7 +399,7 @@ export default function Home() {
       </section>
 
       {/* ── Partnered Brands ── */}
-      <section className="py-16 md:py-20 bg-gray-50 overflow-hidden">
+      <section className="py-16 md:py-20 warm-bg overflow-hidden">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-12">
             <span className="text-green font-semibold text-sm uppercase tracking-wider">
@@ -402,48 +418,54 @@ export default function Home() {
         {/* Marquee */}
         <div className="relative">
           {/* Fade edges */}
-          <div className="absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-gray-50 to-transparent z-10" />
-          <div className="absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-gray-50 to-transparent z-10" />
+          <div className="absolute inset-y-0 left-0 w-24 warm-fade-left z-10" />
+          <div className="absolute inset-y-0 right-0 w-24 warm-fade-right z-10" />
 
           <div className="flex animate-marquee gap-12 w-max">
             {/* First set */}
             {[
-              "Carrier",
-              "Panasonic",
-              "Mitsubishi Electric",
-              "Daikin",
-              "Rinnai",
-              "Fujitsu",
-              "Jinko Solar",
-              "Tesla Powerwall",
+              { name: "Carrier", logo: "/brands/carrier.svg" },
+              { name: "Panasonic", logo: "/brands/panasonic.svg" },
+              { name: "Mitsubishi Electric", logo: "/brands/mitsubishi-electric.svg" },
+              { name: "Daikin", logo: "/brands/daikin.svg" },
+              { name: "Rinnai", logo: "/brands/rinnai.svg" },
+              { name: "Fujitsu", logo: "/brands/fujitsu.svg" },
+              { name: "Jinko Solar", logo: "/brands/jinko-solar.svg" },
+              { name: "Tesla Powerwall", logo: "/brands/tesla.svg" },
             ].map((brand) => (
               <div
-                key={`a-${brand}`}
-                className="flex-shrink-0 w-48 h-24 bg-white rounded-xl border border-gray-200 flex items-center justify-center px-6 hover:shadow-lg hover:border-green/30 transition-all"
+                key={`a-${brand.name}`}
+                className="flex-shrink-0 w-48 h-24 bg-white rounded-xl border border-gray-200 flex items-center justify-center p-5 hover:shadow-lg hover:border-green/30 transition-all"
               >
-                <span className="text-base font-bold text-gray-400 text-center leading-tight">
-                  {brand}
-                </span>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={brand.logo}
+                  alt={brand.name}
+                  className="max-h-14 max-w-[140px] object-contain"
+                />
               </div>
             ))}
             {/* Duplicate set for seamless loop */}
             {[
-              "Carrier",
-              "Panasonic",
-              "Mitsubishi Electric",
-              "Daikin",
-              "Rinnai",
-              "Fujitsu",
-              "Jinko Solar",
-              "Tesla Powerwall",
+              { name: "Carrier", logo: "/brands/carrier.svg" },
+              { name: "Panasonic", logo: "/brands/panasonic.svg" },
+              { name: "Mitsubishi Electric", logo: "/brands/mitsubishi-electric.svg" },
+              { name: "Daikin", logo: "/brands/daikin.svg" },
+              { name: "Rinnai", logo: "/brands/rinnai.svg" },
+              { name: "Fujitsu", logo: "/brands/fujitsu.svg" },
+              { name: "Jinko Solar", logo: "/brands/jinko-solar.svg" },
+              { name: "Tesla Powerwall", logo: "/brands/tesla.svg" },
             ].map((brand) => (
               <div
-                key={`b-${brand}`}
-                className="flex-shrink-0 w-48 h-24 bg-white rounded-xl border border-gray-200 flex items-center justify-center px-6 hover:shadow-lg hover:border-green/30 transition-all"
+                key={`b-${brand.name}`}
+                className="flex-shrink-0 w-48 h-24 bg-white rounded-xl border border-gray-200 flex items-center justify-center p-5 hover:shadow-lg hover:border-green/30 transition-all"
               >
-                <span className="text-base font-bold text-gray-400 text-center leading-tight">
-                  {brand}
-                </span>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={brand.logo}
+                  alt={brand.name}
+                  className="max-h-14 max-w-[140px] object-contain"
+                />
               </div>
             ))}
           </div>
@@ -451,10 +473,10 @@ export default function Home() {
       </section>
 
       {/* ── Accredited Rebate Provider Banner ── */}
-      <section className="relative bg-navy overflow-hidden">
+      <section className="relative hero-gradient overflow-hidden">
         {/* Decorative elements */}
-        <div className="absolute -top-20 -right-20 w-72 h-72 bg-green/5 rounded-full blur-3xl" />
-        <div className="absolute -bottom-16 -left-16 w-60 h-60 bg-green/5 rounded-full blur-3xl" />
+        <div className="absolute -top-20 -right-20 w-72 h-72 bg-amber/5 rounded-full blur-3xl" />
+        <div className="absolute -bottom-16 -left-16 w-60 h-60 bg-orange/5 rounded-full blur-3xl" />
 
         <div className="relative max-w-7xl mx-auto px-6 py-16 md:py-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -470,7 +492,7 @@ export default function Home() {
               <p className="mt-5 text-gray-300 leading-relaxed">
                 As an accredited provider under Australia&apos;s energy
                 efficiency schemes, we help homeowners create{" "}
-                <span className="text-green font-semibold">
+                <span className="text-amber font-semibold">
                   Victorian Energy Efficiency Certificates (VEECs)
                 </span>
                 . These certificates represent the energy savings generated by

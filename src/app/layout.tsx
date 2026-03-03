@@ -18,6 +18,10 @@ export const metadata: Metadata = {
   title: "Energy Rebate Solutions | Government-Backed Energy Upgrades",
   description:
     "Australia's trusted partner for government-backed energy upgrades. Access rebates for heat pumps, solar, air conditioning, and battery storage.",
+  icons: {
+    icon: "/logo.png",
+    apple: "/logo.png",
+  },
 };
 
 export default function RootLayout({

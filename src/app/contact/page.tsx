@@ -92,8 +92,8 @@ export default function ContactPage() {
   return (
     <>
       {/* ── Page Header ── */}
-      <section className="relative bg-navy overflow-hidden">
-        <div className="absolute -top-40 -right-40 w-[500px] h-[500px] bg-green/10 rounded-full blur-3xl" />
+      <section className="relative hero-gradient overflow-hidden">
+        <div className="absolute -top-40 -right-40 w-[500px] h-[500px] bg-amber/10 rounded-full blur-3xl" />
         <div className="absolute bottom-0 left-0 w-full h-20 bg-gradient-to-t from-gray-50 to-transparent" />
         <div className="relative max-w-7xl mx-auto px-6 py-20 md:py-28 text-center">
           <span className="inline-flex items-center gap-2 bg-green/10 text-green text-sm font-semibold px-4 py-1.5 rounded-full mb-5">

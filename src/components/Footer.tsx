@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import {
   Zap,
   Phone,
@@ -35,13 +36,13 @@ export default function Footer() {
   return (
     <footer className="bg-navy text-white">
       {/* ── CTA Banner ── */}
-      <div className="bg-green">
+      <div className="cta-gradient">
         <div className="max-w-7xl mx-auto px-6 py-10 flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
             <h3 className="text-2xl md:text-3xl font-bold text-white">
               Ready to slash your energy bills?
             </h3>
-            <p className="mt-1 text-green-dark/80 font-medium text-sm md:text-base">
+            <p className="mt-1 text-white/70 font-medium text-sm md:text-base">
               Find out which government rebates you qualify for — it takes 2
               minutes.
             </p>
@@ -61,18 +62,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-8">
           {/* Brand column */}
           <div className="lg:col-span-2">
-            <Link href="/" className="flex items-center gap-2.5 group">
-              <div className="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center group-hover:bg-white/20 transition-colors">
-                <Zap size={22} className="text-green" />
-              </div>
-              <div className="leading-tight">
-                <span className="block text-lg font-bold tracking-tight">
-                  Energy Rebate
-                </span>
-                <span className="block text-xs font-medium text-gray-400 -mt-0.5 tracking-wide uppercase">
-                  Solutions
-                </span>
-              </div>
+            <Link href="/" className="flex items-center group">
+              <Image
+                src="/logo.png"
+                alt="Energy Rebate Solutions"
+                width={180}
+                height={60}
+                className="h-12 w-auto object-contain brightness-0 invert"
+              />
             </Link>
             <p className="mt-4 text-gray-400 text-sm leading-relaxed max-w-sm">
               Australia&#39;s trusted partner for government-backed energy
@@ -84,14 +81,14 @@ export default function Footer() {
             <div className="mt-6 space-y-2.5 text-sm text-gray-400">
               <a
                 href="tel:1300000000"
-                className="flex items-center gap-2.5 hover:text-green transition-colors"
+                className="flex items-center gap-2.5 hover:text-amber transition-colors"
               >
                 <Phone size={15} />
                 1300 000 000
               </a>
               <a
                 href="mailto:info@energyrebatesolutions.com.au"
-                className="flex items-center gap-2.5 hover:text-green transition-colors"
+                className="flex items-center gap-2.5 hover:text-amber transition-colors"
               >
                 <Mail size={15} />
                 info@energyrebatesolutions.com.au
@@ -113,7 +110,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-gray-400 hover:text-green transition-colors"
+                    className="text-sm text-gray-400 hover:text-amber transition-colors"
                   >
                     {link.name}
                   </Link>
@@ -132,7 +129,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-gray-400 hover:text-green transition-colors"
+                    className="text-sm text-gray-400 hover:text-amber transition-colors"
                   >
                     {link.name}
                   </Link>
@@ -151,7 +148,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-gray-400 hover:text-green transition-colors"
+                    className="text-sm text-gray-400 hover:text-amber transition-colors"
                   >
                     {link.name}
                   </Link>
@@ -175,7 +172,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Facebook"
-              className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-green/20 hover:text-green transition-colors text-gray-400"
+              className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-amber/20 hover:text-amber transition-colors text-gray-400"
             >
               <Facebook size={16} />
             </a>
@@ -184,7 +181,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
-              className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-green/20 hover:text-green transition-colors text-gray-400"
+              className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-amber/20 hover:text-amber transition-colors text-gray-400"
             >
               <Instagram size={16} />
             </a>
@@ -193,7 +190,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
-              className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-green/20 hover:text-green transition-colors text-gray-400"
+              className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-amber/20 hover:text-amber transition-colors text-gray-400"
             >
               <Linkedin size={16} />
             </a>
