@@ -84,8 +84,9 @@ export default function Footer() {
                 className="flex items-center gap-2.5 hover:text-amber transition-colors"
               >
                 <Phone size={15} />
-                1300 000 000
+                +61 433 901 009(sales) | +61 413 238 089(text)
               </a>
+              
               <a
                 href="mailto:info@energyrebatesolutions.com.au"
                 className="flex items-center gap-2.5 hover:text-amber transition-colors"
@@ -95,7 +96,7 @@ export default function Footer() {
               </a>
               <div className="flex items-start gap-2.5">
                 <MapPin size={15} className="mt-0.5 shrink-0" />
-                <span>Melbourne, VIC Australia</span>
+                <span>28 Station Street, Dandenong,<br /> Melbourne, VIC Australia</span>
               </div>
             </div>
           </div>
