@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" width="240" height="60">
+  <!-- Fox ESS official logo - orange fox icon + text -->
+  <g transform="translate(8, 8)">
+    <!-- Fox ears/head shape -->
+    <path d="M0 0L12 20L24 0L20 16L24 22L12 18L0 22L4 16Z" fill="#E8611A"/>
+    <!-- Fox body -->
+    <circle cx="12" cy="28" r="3" fill="#E8611A"/>
+  </g>
+  <text x="44" y="30" font-family="'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="800" fill="#E8611A" letter-spacing="0.5">Fox</text>
+  <text x="96" y="30" font-family="'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="800" fill="#333333" letter-spacing="0.5">ESS</text>
+  <text x="44" y="48" font-family="'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="500" fill="#888" letter-spacing="2">ENERGY STORAGE</text>
+</svg>

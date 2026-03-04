@@ -9,9 +9,9 @@ import {
 } from "lucide-react";
 
 export const metadata = {
-  title: "Battery Storage Systems | Energy Rebate Solutions",
+  title: "Battery Storage – Federal Rebate Program | Energy Rebate Solutions",
   description:
-    "Store surplus solar energy and power your home around the clock with a modern battery storage system.",
+    "Smart energy storage solutions under the Federal Rebate Program. Store your solar energy and use it when you need it most.",
 };
 
 export default function BatteryPage() {
@@ -24,15 +24,17 @@ export default function BatteryPage() {
         <div className="relative max-w-7xl mx-auto px-6 py-20 md:py-28">
           <span className="inline-flex items-center gap-2 bg-green/10 text-green text-sm font-semibold px-4 py-1.5 rounded-full mb-5">
             <BatteryCharging size={16} />
-            Energy Storage
+            Federal Rebate Program
           </span>
           <h1 className="text-4xl md:text-5xl font-extrabold text-white tracking-tight max-w-2xl">
-            Battery Storage Systems
+            Battery Storage
           </h1>
-          <p className="mt-5 text-lg text-gray-300 max-w-xl leading-relaxed">
-            Store excess solar energy and power your home day and night.
-            Reduce grid dependence, protect against blackouts, and
-            future-proof your energy supply with a modern battery system.
+          <p className="mt-3 text-xl md:text-2xl font-semibold text-amber-300 max-w-2xl">
+            Smart Energy Storage Solutions
+          </p>
+          <p className="mt-4 text-lg text-gray-300 max-w-xl leading-relaxed">
+            Store your own energy through your solar panels and use it when
+            you need it most.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4">
             <Link href="/contact" className="btn-primary text-base px-8 py-3.5">
@@ -48,13 +50,13 @@ export default function BatteryPage() {
       {/* Benefits */}
       <section className="py-20 warm-bg">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-3xl font-bold text-navy text-center mb-12">Why Add a Battery?</h2>
+          <h2 className="text-3xl font-bold text-navy text-center mb-12">Features</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { icon: Moon, title: "Power at Night", text: "Use stored solar energy after the sun goes down instead of buying from the grid." },
-              { icon: BadgeDollarSign, title: "Maximise Savings", text: "Store cheap off-peak energy and avoid expensive peak-rate electricity charges." },
-              { icon: ShieldCheck, title: "Blackout Protection", text: "Keep your essential appliances running during power outages with backup capability." },
-              { icon: Zap, title: "Rebate Eligible", text: "State government battery rebates are available to further reduce your upfront cost." },
+              { icon: ShieldCheck, title: "Backup During Outages", text: "Keep your home powered during blackouts with reliable battery backup for essential appliances." },
+              { icon: Zap, title: "Smart Monitoring", text: "Real-time energy monitoring via app so you can track usage, storage levels, and savings." },
+              { icon: BatteryCharging, title: "Expandable Capacity", text: "Start with what you need and expand your storage capacity over time as your energy needs grow." },
+              { icon: BadgeDollarSign, title: "Long-Term Savings", text: "Maximise your solar investment by storing energy and reducing your reliance on expensive grid power." },
             ].map((b) => {
               const Icon = b.icon;
               return (

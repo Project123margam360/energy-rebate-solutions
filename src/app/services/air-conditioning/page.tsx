@@ -10,9 +10,9 @@ import {
 } from "lucide-react";
 
 export const metadata = {
-  title: "Reverse Cycle Air Conditioning | Energy Rebate Solutions",
+  title: "Reverse Cycle Air Conditioning – VEU Program | Energy Rebate Solutions",
   description:
-    "Upgrade to a premium reverse cycle air conditioning system with top-tier energy ratings and government incentives.",
+    "Ducted & Multi-Split AC systems — efficient heating and cooling solutions for homes and businesses under the VEU Program.",
 };
 
 export default function AirConditioningPage() {
@@ -25,15 +25,17 @@ export default function AirConditioningPage() {
         <div className="relative max-w-7xl mx-auto px-6 py-20 md:py-28">
           <span className="inline-flex items-center gap-2 bg-green/10 text-green text-sm font-semibold px-4 py-1.5 rounded-full mb-5">
             <Snowflake size={16} />
-            Heating &amp; Cooling
+            VEU Program
           </span>
           <h1 className="text-4xl md:text-5xl font-extrabold text-white tracking-tight max-w-2xl">
             Reverse Cycle Air Conditioning
           </h1>
-          <p className="mt-5 text-lg text-gray-300 max-w-xl leading-relaxed">
-            Stay comfortable year-round with a premium reverse cycle system
-            that heats in winter and cools in summer — all while cutting your
-            energy bills with the latest energy-rated technology.
+          <p className="mt-3 text-xl md:text-2xl font-semibold text-amber-300 max-w-2xl">
+            Ducted &amp; Multi-Split AC Systems
+          </p>
+          <p className="mt-4 text-lg text-gray-300 max-w-xl leading-relaxed">
+            Efficient heating and cooling solutions for homes and businesses
+            with Splits &amp; Ducted.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4">
             <Link href="/contact" className="btn-primary text-base px-8 py-3.5">
@@ -49,13 +51,13 @@ export default function AirConditioningPage() {
       {/* Benefits */}
       <section className="py-20 warm-bg">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-3xl font-bold text-navy text-center mb-12">Why Reverse Cycle?</h2>
+          <h2 className="text-3xl font-bold text-navy text-center mb-12">Features</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { icon: Thermometer, title: "Heat & Cool", text: "One system for year-round comfort — no need for separate heating and cooling units." },
-              { icon: BadgeDollarSign, title: "Lower Bills", text: "Up to 3x more efficient than portable heaters, significantly reducing energy costs." },
-              { icon: ShieldCheck, title: "Rebate Eligible", text: "Government incentives available for qualifying energy-efficient split and ducted systems." },
-              { icon: Zap, title: "Smart Features", text: "WiFi control, zone management, and inverter technology for maximum efficiency." },
+              { icon: Zap, title: "Inverter Technology", text: "Advanced inverter-driven compressors that adjust power output for optimal efficiency and quieter operation." },
+              { icon: Thermometer, title: "Energy Star Rated", text: "Energy star rated systems that meet the highest standards of energy efficiency for lower running costs." },
+              { icon: ShieldCheck, title: "Smart Controller Compatible", text: "Compatible with smart controllers for convenient remote access, scheduling, and energy monitoring." },
+              { icon: BadgeDollarSign, title: "5-Year Minimum Warranty", text: "All systems come with a minimum warranty of 5 years for complete peace of mind and protection." },
             ].map((b) => {
               const Icon = b.icon;
               return (

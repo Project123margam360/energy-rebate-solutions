@@ -10,21 +10,50 @@ import {
   BatteryCharging,
   FileCheck,
   ShieldCheck,
+  Building2,
+  Home,
+  Leaf,
 } from "lucide-react";
 
 export const metadata = {
   title: "Government Energy Rebates | Energy Rebate Solutions",
   description:
-    "Find out which government rebates you qualify for — heat pumps, solar, air conditioning, and battery storage rebates across Australia.",
+    "Available of all different Energy Rebate Programs for Residential & Commercial sites across Australia.",
 };
 
 const rebatePrograms = [
   {
+    icon: Zap,
+    title: "Victorian Energy Upgrades (VEU)",
+    rebateValue: "Varies",
+    description:
+      "The VEU program helps Victorian households and businesses reduce energy costs by providing incentives for energy-efficient upgrades. We handle the entire VEU process from assessment to certificate lodgement.",
+    eligibility: [
+      "Victorian residential or commercial property",
+      "Replacing inefficient appliances or systems",
+      "Installation by accredited VEU provider",
+      "Must meet minimum energy efficiency standards",
+    ],
+  },
+  {
+    icon: Sun,
+    title: "Solar Panel Rebates (Solar Victoria)",
+    rebateValue: "Up to $1,400",
+    description:
+      "Access Solar Victoria rebates to dramatically reduce the upfront cost of a rooftop solar system. Combined with federal STCs, solar has never been more affordable for Australian homeowners.",
+    eligibility: [
+      "Property owner with suitable roof space",
+      "Combined household income under $210,000",
+      "Property value under $3 million",
+      "Installed by CEC-accredited installer",
+    ],
+  },
+  {
     icon: Droplets,
-    title: "Heat Pump Rebates",
+    title: "Heat Pump Rebates (VEU & STCs)",
     rebateValue: "Up to $1,000+",
     description:
-      "Replace your old electric or gas hot water system with an eligible heat pump and claim government rebates through STCs and state-based incentives.",
+      "Replace your old electric or gas hot water system with an energy-efficient heat pump. Claim rebates through both the VEU program and federal Small-scale Technology Certificates (STCs).",
     eligibility: [
       "Existing electric or gas hot water system",
       "Property owner or authorised representative",
@@ -33,42 +62,29 @@ const rebatePrograms = [
     ],
   },
   {
-    icon: Snowflake,
-    title: "Air Conditioning Rebates",
-    rebateValue: "Up to $1,000+",
-    description:
-      "Upgrade to an energy-rated reverse cycle system and access Victorian Energy Upgrades (VEU) program incentives and additional state rebates.",
-    eligibility: [
-      "Replacing an existing inefficient system",
-      "Residential or commercial property",
-      "Minimum energy star rating required",
-      "Installation by licensed technician",
-    ],
-  },
-  {
-    icon: Sun,
-    title: "Solar Panel Rebates",
-    rebateValue: "Up to $2,500+",
-    description:
-      "Access federal Small-scale Technology Certificates (STCs) and state solar rebates that can dramatically reduce the cost of a rooftop solar system.",
-    eligibility: [
-      "Property owner with suitable roof space",
-      "System under 100kW capacity",
-      "CEC-approved panels and inverter",
-      "Installed by CEC-accredited installer",
-    ],
-  },
-  {
     icon: BatteryCharging,
-    title: "Battery Storage Rebates",
+    title: "Battery Storage (STCs)",
     rebateValue: "Up to $3,000+",
     description:
-      "State government battery rebate programs can significantly offset the cost of adding storage to your solar system for round-the-clock energy savings.",
+      "State government battery rebate programs and federal STCs can significantly offset the cost of adding battery storage to your solar system for round-the-clock energy savings.",
     eligibility: [
       "Existing or new solar system on property",
       "Approved battery product list",
       "Household income eligibility (varies by state)",
       "Installation by accredited provider",
+    ],
+  },
+  {
+    icon: Leaf,
+    title: "Energy Efficiency Incentives (VEECs/VEU)",
+    rebateValue: "Varies",
+    description:
+      "Victorian Energy Efficiency Certificates (VEECs) are created when energy-saving upgrades are installed. We manage the creation, lodgement, and processing of your VEECs to maximise your financial benefit.",
+    eligibility: [
+      "Victorian residential or commercial property",
+      "Qualifying energy efficiency upgrade",
+      "Installed by accredited VEU provider",
+      "Meets government compliance standards",
     ],
   },
 ];
@@ -89,9 +105,9 @@ export default function RebatesPage() {
             Government Energy Rebates
           </h1>
           <p className="mt-5 text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed">
-            Australian homeowners can access thousands of dollars in government
-            rebates for energy-efficient upgrades. We help you navigate the
-            programs and maximise your savings.
+            Available of all different Energy Rebate Programs to the Residential
+            &amp; Commercial sites. We help you navigate the programs and
+            maximise your savings.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact" className="btn-primary text-base px-8 py-3.5">
@@ -134,12 +150,11 @@ export default function RebatesPage() {
               Available Programs
             </span>
             <h2 className="mt-2 text-3xl md:text-4xl font-bold text-navy">
-              Rebates by Product
+              Energy Rebate Programs
             </h2>
             <p className="mt-4 text-gray-500">
-              Explore the rebates available for each type of energy upgrade.
-              Actual amounts depend on your location, property, and current
-              systems.
+              We assist with a range of government-backed rebate programs for
+              residential and commercial properties across Australia.
             </p>
           </div>
 

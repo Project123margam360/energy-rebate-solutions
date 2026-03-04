@@ -9,9 +9,9 @@ import {
 } from "lucide-react";
 
 export const metadata = {
-  title: "Solar Panel Installation | Energy Rebate Solutions",
+  title: "Solar Panels – Solar Victoria Program | Energy Rebate Solutions",
   description:
-    "Harness Australian sunshine with a professionally installed rooftop solar system and reduce your energy bills from day one.",
+    "Premium solar panel installation under the Solar Victoria Program. Generate clean energy and reduce electricity bills.",
 };
 
 export default function SolarPage() {
@@ -24,15 +24,16 @@ export default function SolarPage() {
         <div className="relative max-w-7xl mx-auto px-6 py-20 md:py-28">
           <span className="inline-flex items-center gap-2 bg-green/10 text-green text-sm font-semibold px-4 py-1.5 rounded-full mb-5">
             <Sun size={16} />
-            Solar Energy
+            Solar Victoria Program
           </span>
           <h1 className="text-4xl md:text-5xl font-extrabold text-white tracking-tight max-w-2xl">
-            Solar Panel Installation
+            Solar Panels
           </h1>
-          <p className="mt-5 text-lg text-gray-300 max-w-xl leading-relaxed">
-            Capture free energy from the Australian sun with a professionally
-            designed and installed rooftop solar system — reduce your
-            electricity bills from the very first day.
+          <p className="mt-3 text-xl md:text-2xl font-semibold text-amber-300 max-w-2xl">
+            Premium Solar Panel Installation
+          </p>
+          <p className="mt-4 text-lg text-gray-300 max-w-xl leading-relaxed">
+            Generate clean energy and reduce electricity bills.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4">
             <Link href="/contact" className="btn-primary text-base px-8 py-3.5">
@@ -48,13 +49,13 @@ export default function SolarPage() {
       {/* Benefits */}
       <section className="py-20 warm-bg">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-3xl font-bold text-navy text-center mb-12">Why Go Solar?</h2>
+          <h2 className="text-3xl font-bold text-navy text-center mb-12">Benefits</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { icon: BadgeDollarSign, title: "Slash Your Bills", text: "Generate your own electricity and dramatically reduce your reliance on the grid." },
-              { icon: TrendingUp, title: "Great ROI", text: "Most solar systems pay for themselves in 3-5 years and continue saving for 25+ years." },
-              { icon: ShieldCheck, title: "Rebate Eligible", text: "Access federal STCs and state rebates that significantly reduce the upfront cost." },
-              { icon: Zap, title: "Feed-In Tariffs", text: "Earn credits by exporting surplus solar energy back to the grid." },
+              { icon: Zap, title: "High Efficiency Panels", text: "Premium high efficiency solar panels that maximise energy generation from every ray of sunlight." },
+              { icon: ShieldCheck, title: "Tier-1 Manufacturers", text: "We only install panels from Tier-1 manufacturers, ensuring world-class quality and reliability." },
+              { icon: TrendingUp, title: "25-Year Warranty", text: "25-year performance warranty on panels, giving you decades of guaranteed energy production." },
+              { icon: BadgeDollarSign, title: "Federal STC Rebates", text: "Federal Government STC rebates available to significantly reduce your upfront installation cost." },
             ].map((b) => {
               const Icon = b.icon;
               return (

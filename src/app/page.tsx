@@ -426,9 +426,11 @@ export default function Home() {
               { name: "Mitsubishi Electric", logo: "/brands/mitsubishi-electric.svg" },
               { name: "Daikin", logo: "/brands/daikin.svg" },
               { name: "Rinnai", logo: "/brands/rinnai.svg" },
-              { name: "Fujitsu", logo: "/brands/fujitsu.svg" },
+              { name: "Midea", logo: "/brands/midea.svg" },
+              { name: "Fox ESS", logo: "/brands/fox-ess.svg" },
+              { name: "GoodWe", logo: "/brands/goodwe.svg" },
+              { name: "Sungrow", logo: "/brands/sungrow.svg" },
               { name: "Jinko Solar", logo: "/brands/jinko-solar.svg" },
-              { name: "Tesla Powerwall", logo: "/brands/tesla.svg" },
             ].map((brand) => (
               <div
                 key={`a-${brand.name}`}
@@ -449,9 +451,11 @@ export default function Home() {
               { name: "Mitsubishi Electric", logo: "/brands/mitsubishi-electric.svg" },
               { name: "Daikin", logo: "/brands/daikin.svg" },
               { name: "Rinnai", logo: "/brands/rinnai.svg" },
-              { name: "Fujitsu", logo: "/brands/fujitsu.svg" },
+              { name: "Midea", logo: "/brands/midea.svg" },
+              { name: "Fox ESS", logo: "/brands/fox-ess.svg" },
+              { name: "GoodWe", logo: "/brands/goodwe.svg" },
+              { name: "Sungrow", logo: "/brands/sungrow.svg" },
               { name: "Jinko Solar", logo: "/brands/jinko-solar.svg" },
-              { name: "Tesla Powerwall", logo: "/brands/tesla.svg" },
             ].map((brand) => (
               <div
                 key={`b-${brand.name}`}
