@@ -61,7 +61,7 @@ export default function Navbar() {
             className="flex items-center gap-1.5 hover:text-amber-light transition-colors"
           >
             <Phone size={14} />
-            1300 000 000
+            +61 433 901 009
           </a>
         </div>
       </div>
