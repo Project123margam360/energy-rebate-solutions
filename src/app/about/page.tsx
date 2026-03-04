@@ -56,8 +56,7 @@ export default function AboutPage() {
                 Leading Provider of Government-Backed Energy Upgrades
               </h2>
               <p className="mt-5 text-gray-500 leading-relaxed">
-                Energy Rebate Solutions is a leading provider of
-                government-backed energy efficiency upgrades across Australia.
+                Energy Rebate Solutions assist you providing Victorian Energy Upgrades products including all Sustainable Environmental Energy Programs reducing the gas emissions. 
               </p>
               <p className="mt-4 text-gray-500 leading-relaxed">
                 We specialize in helping homeowners and businesses access
