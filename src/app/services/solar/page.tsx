@@ -55,7 +55,7 @@ export default function SolarPage() {
               { icon: Zap, title: "High Efficiency Panels", text: "Premium high efficiency solar panels that maximise energy generation from every ray of sunlight." },
               { icon: ShieldCheck, title: "Tier-1 Manufacturers", text: "We only install panels from Tier-1 manufacturers, ensuring world-class quality and reliability." },
               { icon: TrendingUp, title: "25-Year Warranty", text: "25-year performance warranty on panels, giving you decades of guaranteed energy production." },
-              { icon: BadgeDollarSign, title: "Federal STC Rebates", text: "Federal Government STC rebates available to significantly reduce your upfront installation cost." },
+              { icon: BadgeDollarSign, title: "Federal STC Rebates", text: "Federal STC rebates available to significantly reduce your upfront installation cost." },
             ].map((b) => {
               const Icon = b.icon;
               return (

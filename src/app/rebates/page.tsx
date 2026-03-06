@@ -16,7 +16,7 @@ import {
 } from "lucide-react";
 
 export const metadata = {
-  title: "Government Energy Rebates | Energy Rebate Solutions",
+  title: "Energy Rebates | Energy Rebate Solutions",
   description:
     "Available of all different Energy Rebate Programs for Residential & Commercial sites across Australia.",
 };
@@ -66,7 +66,7 @@ const rebatePrograms = [
     title: "Battery Storage (STCs)",
     rebateValue: "Up to $3,000+",
     description:
-      "State government battery rebate programs and federal STCs can significantly offset the cost of adding battery storage to your solar system for round-the-clock energy savings.",
+      "State battery rebate programs and federal STCs can significantly offset the cost of adding battery storage to your solar system for round-the-clock energy savings.",
     eligibility: [
       "Existing or new solar system on property",
       "Approved battery product list",
@@ -84,7 +84,7 @@ const rebatePrograms = [
       "Victorian residential or commercial property",
       "Qualifying energy efficiency upgrade",
       "Installed by accredited VEU provider",
-      "Meets government compliance standards",
+      "Meets compliance standards",
     ],
   },
 ];
@@ -99,10 +99,10 @@ export default function RebatesPage() {
         <div className="relative max-w-7xl mx-auto px-6 py-20 md:py-28 text-center">
           <span className="inline-flex items-center gap-2 bg-green/10 text-green text-sm font-semibold px-4 py-1.5 rounded-full mb-5">
             <BadgeDollarSign size={16} />
-            Government Incentives
+            Energy Incentives
           </span>
           <h1 className="text-4xl md:text-5xl font-extrabold text-white tracking-tight max-w-3xl mx-auto">
-            Government Energy Rebates
+            Energy Rebates
           </h1>
           <p className="mt-5 text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed">
             Available of all different Energy Rebate Programs to the Residential
@@ -127,7 +127,7 @@ export default function RebatesPage() {
             {[
               { step: "01", title: "Free Assessment", text: "We check your property and current systems against rebate eligibility criteria." },
               { step: "02", title: "Quote & Approval", text: "Receive a transparent quote showing the full cost, rebate value, and your final price." },
-              { step: "03", title: "Installation", text: "Our accredited team completes the upgrade to government compliance standards." },
+              { step: "03", title: "Installation", text: "Our accredited team completes the upgrade to full compliance standards." },
               { step: "04", title: "Rebate Processed", text: "We handle all certificates, paperwork, and lodgements — you receive your savings." },
             ].map((s) => (
               <div key={s.step} className="bg-white rounded-xl border border-gray-200 p-6 text-center hover:shadow-lg transition-shadow">
@@ -153,7 +153,7 @@ export default function RebatesPage() {
               Energy Rebate Programs
             </h2>
             <p className="mt-4 text-gray-500">
-              We assist with a range of government-backed rebate programs for
+              We assist with a range of rebate programs for
               residential and commercial properties across Australia.
             </p>
           </div>
@@ -215,7 +215,7 @@ export default function RebatesPage() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             {[
-              { icon: ShieldCheck, title: "Accredited Provider", text: "Government-approved to deliver rebate-eligible installations." },
+              { icon: ShieldCheck, title: "Accredited Provider", text: "Fully approved to deliver rebate-eligible installations." },
               { icon: FileCheck, title: "We Handle Paperwork", text: "STCs, VEECs, and all compliance documentation managed for you." },
               { icon: BadgeDollarSign, title: "Maximum Savings", text: "We ensure you claim every dollar of rebate you're entitled to." },
             ].map((t) => {

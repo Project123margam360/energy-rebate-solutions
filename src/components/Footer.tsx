@@ -43,7 +43,7 @@ export default function Footer() {
               Ready to slash your energy bills?
             </h3>
             <p className="mt-1 text-white/70 font-medium text-sm md:text-base">
-              Find out which government rebates you qualify for — it takes 2
+              Find out which rebates you qualify for — it takes 2
               minutes.
             </p>
           </div>
@@ -72,7 +72,7 @@ export default function Footer() {
               />
             </Link>
             <p className="mt-4 text-gray-400 text-sm leading-relaxed max-w-sm">
-              Australia&#39;s trusted partner for government-backed energy
+              Australia&#39;s trusted partner for energy-efficient
               upgrades. We help households and businesses access rebates for heat
               pumps, solar, air conditioning, and battery storage.
             </p>

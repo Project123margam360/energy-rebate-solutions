@@ -12,7 +12,7 @@ import {
 export const metadata = {
   title: "Heat Pump Hot Water Systems | Energy Rebate Solutions",
   description:
-    "Upgrade to an energy-efficient heat pump hot water system and save up to 75% on water heating costs with government rebates.",
+    "Upgrade to an energy-efficient heat pump hot water system and save up to 75% on water heating costs with available rebates.",
 };
 
 export default function HeatPumpsPage() {
@@ -33,7 +33,7 @@ export default function HeatPumpsPage() {
           <p className="mt-5 text-lg text-gray-300 max-w-xl leading-relaxed">
             Replace your old electric or gas hot water unit with a
             high-efficiency heat pump and slash your water heating costs by up
-            to 75% — with generous government rebates to offset the upfront
+            to 75% — with generous rebates to offset the upfront
             cost.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4">
@@ -57,7 +57,7 @@ export default function HeatPumpsPage() {
             {[
               { icon: BadgeDollarSign, title: "Save Up to 75%", text: "Dramatically lower your hot water energy bills compared to traditional electric systems." },
               { icon: ThermometerSun, title: "All-Weather Performance", text: "Modern heat pumps work efficiently even in cooler climates across Australia." },
-              { icon: ShieldCheck, title: "Rebate Eligible", text: "Access government rebates and STCs that can cover a significant portion of the cost." },
+              { icon: ShieldCheck, title: "Rebate Eligible", text: "Access available rebates and STCs that can cover a significant portion of the cost." },
               { icon: Zap, title: "Eco-Friendly", text: "Reduce your household carbon emissions by switching to renewable energy heating." },
             ].map((b) => {
               const Icon = b.icon;
@@ -83,7 +83,7 @@ export default function HeatPumpsPage() {
             {[
               { step: "01", title: "Free Assessment", text: "We assess your property and current hot water system to determine eligibility and savings." },
               { step: "02", title: "Installation", text: "Our accredited installers fit your new heat pump system — typically in just one day." },
-              { step: "03", title: "Rebate Processed", text: "We handle all government paperwork and ensure you receive your maximum rebate." },
+              { step: "03", title: "Rebate Processed", text: "We handle all paperwork and ensure you receive your maximum rebate." },
             ].map((s) => (
               <div key={s.step} className="text-center">
                 <div className="w-14 h-14 rounded-full bg-navy text-green font-extrabold text-xl flex items-center justify-center mx-auto mb-4">{s.step}</div>

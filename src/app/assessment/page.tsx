@@ -117,7 +117,7 @@ export default function AssessmentPage() {
             Get Your Free Energy Assessment
           </h1>
           <p className="mt-5 text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed">
-            Find out which government rebates you qualify for and how much you
+            Find out which rebates you qualify for and how much you
             could save on energy-efficient upgrades — it takes just 2 minutes.
           </p>
         </div>
@@ -145,7 +145,7 @@ export default function AssessmentPage() {
                     {
                       step: "2",
                       title: "We Check Eligibility",
-                      text: "Our team reviews your details against current government rebate programs.",
+                      text: "Our team reviews your details against current rebate programs.",
                     },
                     {
                       step: "3",
@@ -179,7 +179,7 @@ export default function AssessmentPage() {
                 <ul className="space-y-3 text-sm text-gray-300">
                   {[
                     "100% free, no-obligation assessment",
-                    "Government-accredited rebate provider",
+                    "Accredited rebate provider",
                     "Response within 24 business hours",
                     "Transparent pricing — no hidden fees",
                     "5,000+ homes already upgraded",
@@ -265,7 +265,7 @@ export default function AssessmentPage() {
                     Free Energy Assessment
                   </h3>
                   <p className="text-sm text-gray-400 mb-8">
-                    Fill in your details and we&apos;ll check which government
+                    Fill in your details and we&apos;ll check which
                     rebates you qualify for.
                   </p>
 

@@ -33,7 +33,7 @@ const services = [
   {
     title: "Air Conditioning",
     description:
-      "Upgrade to a premium split or ducted system with top-tier energy ratings and government incentives.",
+      "Upgrade to a premium split or ducted system with top-tier energy ratings and available incentives.",
     icon: Snowflake,
     href: "/services/air-conditioning",
   },
@@ -56,7 +56,7 @@ const services = [
 const trustPoints = [
   {
     icon: Shield,
-    title: "Government Approved",
+    title: "Fully Accredited",
     text: "Fully accredited to deliver rebate-eligible installations across Australia.",
   },
   {
@@ -94,7 +94,7 @@ export default function Home() {
                 Offering under Victoria Energy Upgrades Rebates, Solar Rebates, Batteries and all other incentive Programs benefiting the customers and reducing carbon emissions.
               </p>
               <p className="mt-4 text-base text-gray-400 leading-relaxed max-w-xl">
-                We help Australian households access government-backed incentives
+                We help Australian households access available incentives
                 for heat pumps, solar, air conditioning, and battery storage — so
                 you save money while reducing your carbon footprint.
               </p>
@@ -233,7 +233,7 @@ export default function Home() {
                 {
                   icon: CheckCircle,
                   title: "Maximum Rebate Benefits",
-                  text: "Our experts ensure you claim every dollar of government rebates you\u2019re entitled to — hassle-free.",
+                  text: "Our experts ensure you claim every dollar of rebates you\u2019re entitled to — hassle-free.",
                 },
               ].map((benefit) => {
                 const Icon = benefit.icon;
@@ -270,7 +270,7 @@ export default function Home() {
               Energy Upgrades That Pay for Themselves
             </h2>
             <p className="mt-4 text-gray-500">
-              We install government-rebate-eligible systems that cut your bills
+              We install rebate-eligible systems that cut your bills
               and boost your home&apos;s value.
             </p>
           </div>
@@ -332,7 +332,7 @@ export default function Home() {
                 icon: Droplets,
                 title: "Heat Pump Hot Water Systems",
                 description:
-                  "Replace your old electric or gas hot water unit with a highly efficient heat pump system — eligible for government rebates up to $1,000+.",
+                  "Replace your old electric or gas hot water unit with a highly efficient heat pump system — eligible for rebates up to $1,000+.",
               },
               {
                 icon: Snowflake,
@@ -356,7 +356,7 @@ export default function Home() {
                 icon: FileCheck,
                 title: "Rebate Processing & Compliance",
                 description:
-                  "We handle all government paperwork, STC certificates, and compliance requirements so you receive your maximum rebate without the hassle.",
+                  "We handle all paperwork, STC certificates, and compliance requirements so you receive your maximum rebate without the hassle.",
               },
               {
                 icon: Headphones,
@@ -522,7 +522,7 @@ export default function Home() {
                 {
                   icon: BadgeCheck,
                   title: "Full Compliance",
-                  text: "Every installation meets strict government standards and regulatory requirements for VEECs and STCs.",
+                  text: "Every installation meets strict industry standards and regulatory requirements for VEECs and STCs.",
                 },
                 {
                   icon: Eye,
@@ -610,7 +610,7 @@ export default function Home() {
                 name: "Sarah M.",
                 location: "Melbourne, VIC",
                 rating: 5,
-                text: "Energy Rebate Solutions saved us thousands on our hot water system upgrade. The heat pump they installed cut our energy bills by over 60%, and the government rebate covered most of the cost. Absolutely worth it!",
+                text: "Energy Rebate Solutions saved us thousands on our hot water system upgrade. The heat pump they installed cut our energy bills by over 60%, and the rebate covered most of the cost. Absolutely worth it!",
               },
               {
                 name: "James T.",

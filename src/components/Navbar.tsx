@@ -54,7 +54,7 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-6 py-1.5 flex items-center justify-between">
           <p className="flex items-center gap-1.5">
             <Zap size={14} className="text-amber" />
-            Government-backed rebates available — save up to $3,000+
+            Energy rebates available — save up to $3,000+
           </p>
           <a
             href="tel:1300000000"

@@ -203,7 +203,7 @@ export default function ContactPage() {
                 <ul className="space-y-3 text-sm text-gray-300">
                   {[
                     "Free, no-obligation energy assessment",
-                    "Government rebate eligibility check",
+                    "Rebate eligibility check",
                     "Transparent pricing — no hidden fees",
                     "Response within 24 business hours",
                     "Accredited & fully insured installers",
@@ -265,7 +265,7 @@ export default function ContactPage() {
                   </h3>
                   <p className="text-sm text-gray-400 mb-8">
                     Fill in the details below and we&apos;ll check which
-                    government rebates you qualify for.
+                    rebates you qualify for.
                   </p>
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">

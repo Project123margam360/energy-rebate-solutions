@@ -17,7 +17,7 @@ import {
 export const metadata = {
   title: "About Us | Energy Rebate Solutions",
   description:
-    "Learn about Energy Rebate Solutions — Australia's leading provider of government-backed energy efficiency upgrades.",
+    "Learn about Energy Rebate Solutions — Australia's leading provider of energy-efficient upgrades.",
 };
 
 export default function AboutPage() {
@@ -36,7 +36,7 @@ export default function AboutPage() {
             About Energy Rebate Solutions
           </h1>
           <p className="mt-5 text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed">
-            Australia&apos;s trusted partner for government-backed energy
+            Australia&apos;s trusted partner for energy-efficient
             upgrades — helping households and businesses save money while
             building a sustainable future.
           </p>
@@ -53,7 +53,7 @@ export default function AboutPage() {
                 Who We Are
               </span>
               <h2 className="mt-2 text-3xl md:text-4xl font-bold text-navy leading-tight">
-                Leading Provider of Government-Backed Energy Upgrades
+                Leading Provider of Energy-Efficient Upgrades
               </h2>
               <p className="mt-5 text-gray-500 leading-relaxed">
                 Energy Rebate Solutions assist you providing Victorian Energy Upgrades products including all Sustainable Environmental Energy Programs reducing the gas emissions. 
@@ -111,7 +111,7 @@ export default function AboutPage() {
                 {
                   icon: CheckCircle,
                   title: "Maximum Rebate Benefits",
-                  text: "Our experts ensure you claim every dollar of government rebates you\u2019re entitled to — hassle-free.",
+                  text: "Our experts ensure you claim every dollar of rebates you\u2019re entitled to — hassle-free.",
                 },
               ].map((benefit) => {
                 const Icon = benefit.icon;
@@ -162,7 +162,7 @@ export default function AboutPage() {
               {
                 icon: ShieldCheck,
                 title: "Full Compliance",
-                text: "We meet every government standard and regulatory requirement for rebate-eligible installations.",
+                text: "We meet every industry standard and regulatory requirement for rebate-eligible installations.",
               },
               {
                 icon: Heart,
@@ -234,7 +234,7 @@ export default function AboutPage() {
               {
                 icon: Award,
                 title: "Accredited Installers",
-                text: "All our technicians are fully licensed, insured, and government-accredited to deliver rebate-eligible upgrades across Australia.",
+                text: "All our technicians are fully licensed, insured, and accredited to deliver rebate-eligible upgrades across Australia.",
               },
               {
                 icon: Zap,
@@ -274,7 +274,7 @@ export default function AboutPage() {
             Ready to Start Saving?
           </h2>
           <p className="mt-3 text-white/70 font-medium">
-            Find out which government rebates you qualify for — it takes 2
+            Find out which rebates you qualify for — it takes 2
             minutes.
           </p>
           <Link
