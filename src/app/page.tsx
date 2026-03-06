@@ -55,11 +55,6 @@ const services = [
 
 const trustPoints = [
   {
-    icon: Shield,
-    title: "Fully Accredited",
-    text: "Fully accredited to deliver rebate-eligible installations across Australia.",
-  },
-  {
     icon: BadgeDollarSign,
     title: "Save Thousands",
     text: "Access rebates up to $3,000+ on qualifying energy upgrades for your home.",
@@ -86,6 +81,10 @@ export default function Home() {
           <div className="flex items-center justify-between gap-12">
             {/* Left — Text content */}
             <div className="max-w-3xl">
+              <span className="inline-flex items-center gap-2 bg-green/10 text-green text-sm font-semibold px-4 py-1.5 rounded-full mb-6">
+                <Sun size={16} />
+                Victorian Energy Rebates
+              </span>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight tracking-tight">
                 Welcome to{" "}
                 <span className="text-gradient">Energy Rebate Solutions</span>
