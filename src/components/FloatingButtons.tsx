@@ -1,18 +1,11 @@
 "use client";
 
-import { Phone } from "lucide-react";
+
 
 export default function FloatingButtons() {
   return (
     <div className="fixed right-4 bottom-6 z-50 flex flex-col gap-3">
-      {/* Phone button */}
-      <a
-        href="tel:+61433901009"
-        aria-label="Call us"
-        className="w-14 h-14 rounded-full bg-navy hover:bg-navy-light text-white flex items-center justify-center shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all"
-      >
-        <Phone size={24} />
-      </a>
+      
 
       {/* WhatsApp button */}
       <a

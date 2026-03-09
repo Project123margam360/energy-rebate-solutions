@@ -52,14 +52,7 @@ export default function Navbar() {
       {/* ── Top bar ── */}
       <div className="hidden md:block bg-gradient-to-r from-navy-dark via-navy to-navy-light text-white text-sm">
         <div className="max-w-7xl mx-auto px-6 py-1.5 flex items-center justify-center gap-6">
-          <a
-            href="tel:+61433901009"
-            className="flex items-center gap-1.5 hover:text-amber-light transition-colors"
-          >
-            <Phone size={14} />
-            +61 433 901 009
-          </a>
-          <span className="text-white/40">|</span>
+          
           <a
             href="https://wa.me/61413238089"
             target="_blank"

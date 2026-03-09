@@ -37,6 +37,8 @@ const states = [
   "NT — Northern Territory",
 ];
 
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/xwvrvlqy";
+
 export default function AssessmentPage() {
   const [formData, setFormData] = useState({
     fullName: "",
@@ -52,6 +54,8 @@ export default function AssessmentPage() {
 
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState("");
 
   function validate() {
     const newErrors: Record<string, string> = {};
@@ -73,12 +77,38 @@ export default function AssessmentPage() {
     return newErrors;
   }
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     const newErrors = validate();
     setErrors(newErrors);
-    if (Object.keys(newErrors).length === 0) {
+    setSubmitError("");
+
+    if (Object.keys(newErrors).length !== 0) {
+      return;
+    }
+
+    try {
+      setSubmitting(true);
+      const payload = new FormData(e.currentTarget);
+      const response = await fetch(FORMSPREE_ENDPOINT, {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+        },
+        body: payload,
+      });
+
+      if (!response.ok) {
+        throw new Error("Submission failed");
+      }
+
       setSubmitted(true);
+    } catch {
+      setSubmitError(
+        "We could not submit your assessment right now. Please try again in a moment."
+      );
+    } finally {
+      setSubmitting(false);
     }
   }
 
@@ -259,6 +289,8 @@ export default function AssessmentPage() {
                 <form
                   onSubmit={handleSubmit}
                   noValidate
+                  action={FORMSPREE_ENDPOINT}
+                  method="POST"
                   className="bg-white rounded-2xl border border-gray-200 shadow-sm p-7 md:p-10"
                 >
                   <h3 className="text-xl font-bold text-navy mb-1">
@@ -607,11 +639,18 @@ export default function AssessmentPage() {
                   {/* Submit */}
                   <button
                     type="submit"
+                    disabled={submitting}
                     className="btn-primary w-full justify-center text-base mt-8 py-3.5"
                   >
                     <Send size={18} />
-                    Request Free Assessment
+                    {submitting ? "Submitting..." : "Request Free Assessment"}
                   </button>
+
+                  {submitError && (
+                    <p className="mt-3 text-sm text-red-500 text-center">
+                      {submitError}
+                    </p>
+                  )}
 
                   <p className="mt-4 text-xs text-gray-400 text-center">
                     By submitting this form you agree to our{" "}

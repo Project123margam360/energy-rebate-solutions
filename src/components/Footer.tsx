@@ -79,13 +79,7 @@ export default function Footer() {
 
             {/* Contact info */}
             <div className="mt-6 space-y-2.5 text-sm text-gray-400">
-              <a
-                href="tel:+61433901009"
-                className="flex items-center gap-2.5 hover:text-amber transition-colors"
-              >
-                <Phone size={15} />
-                +61 433 901 009
-              </a>
+            
               <a
                 href="https://wa.me/61413238089"
                 target="_blank"
