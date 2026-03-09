@@ -93,11 +93,11 @@ export default function Footer() {
               </a>
               
               <a
-                href="mailto:info@energyrebatesolutions.com.au"
+                href="mailto:energyrebatesolutions@gmail.com"
                 className="flex items-center gap-2.5 hover:text-amber transition-colors"
               >
                 <Mail size={15} />
-                info@energyrebatesolutions.com.au
+                energyrebatesolutions@gmail.com
               </a>
               <div className="flex items-start gap-2.5">
                 <MapPin size={15} className="mt-0.5 shrink-0" />

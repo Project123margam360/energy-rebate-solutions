@@ -133,10 +133,10 @@ export default function ContactPage() {
                         Email
                       </span>
                       <a
-                        href="mailto:info@energyrebatesolutions.com.au"
+                        href="mailto:energyrebatesolutions@gmail.com"
                         className="text-sm text-navy font-medium hover:text-green transition-colors break-all"
                       >
-                        info@energyrebatesolutions.com.au
+                        energyrebatesolutions@gmail.com
                       </a>
                     </div>
                   </div>
