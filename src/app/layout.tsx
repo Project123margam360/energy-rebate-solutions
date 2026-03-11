@@ -35,6 +35,9 @@ export const metadata: Metadata = {
     images: [
       {
         url: "https://energyrebatesolutions.com.au/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Energy Rebate Solutions Logo",
       },
     ],
   },
@@ -43,7 +46,12 @@ export const metadata: Metadata = {
     title: "Victorian Energy Rebates | Energy Rebate Solutions",
     description:
       "Save with Victorian Energy Upgrade rebates for solar, heat pumps, air conditioning and battery systems.",
-    images: ["https://energyrebatesolutions.com.au/logo.png"],
+    images: [{
+      url: "https://energyrebatesolutions.com.au/logo.png",
+      width: 1200,
+      height: 630,
+      alt: "Energy Rebate Solutions Logo",
+    }],
   },
   robots: {
     index: true,
