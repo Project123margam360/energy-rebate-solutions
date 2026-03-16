@@ -149,12 +149,26 @@ export default function ContactPage() {
                       <span className="block text-xs font-semibold text-gray-400 uppercase tracking-wider">
                         Phone
                       </span>
-                      <a
-                        href="tel:1300000000"
-                        className="text-sm text-navy font-medium hover:text-green transition-colors"
-                      >
-                        1300 000 000
-                      </a>
+                      <div className="flex flex-col items-start">
+                        <a
+                          href="tel:1300195487"
+                          className="text-sm text-navy font-medium hover:text-green transition-colors"
+                        >
+                          1300 195 487
+                        </a>
+                        <a
+                          href="tel:0384567264"
+                          className="text-sm text-navy font-medium hover:text-green transition-colors"
+                        >
+                          0384 567 264
+                        </a>
+                        <a
+                          href="tel:0433901009"
+                          className="text-sm text-navy font-medium hover:text-green transition-colors"
+                        >
+                          0433 901 009
+                        </a>
+                      </div>
                     </div>
                   </div>
 
